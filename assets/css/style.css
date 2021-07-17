@@ -1,0 +1,118 @@
+:root {
+  --color-one: #0d1b2a;
+  --color-two: #1b263b;
+  --color-three: #415a77;
+  --color-four: #778da9;
+  --color-five: #e0e1dd;
+}
+
+* {
+  max-width: 100vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--color-two);
+}
+
+.navbar {
+  background-color: var(--color-one) !important;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+/* about me */
+
+.about-me {
+  background-color: var(--color-five);
+  align-items: center;
+  height: 80vh;
+}
+
+.about-me-content {
+  margin: 0 25px;
+}
+
+main h1,
+h2 {
+  font-size: 100px;
+}
+
+.about-me p {
+  line-height: 2;
+  font-size: 17px;
+  color: var(--color-three);
+}
+
+.learn-more {
+  background-color: var(--color-three);
+  color: var(--color-five);
+}
+
+.learn-more:hover {
+  font-size: larger;
+  background-color: var(--color-five);
+  border: 1px solid var(--color-one);
+  color: var(--color-one);
+  transition: 500ms;
+}
+
+#word-one {
+  font-size: 155px;
+  animation: fadeIn linear 5s;
+}
+#word-two {
+  font-size: 55px;
+  animation: fadeIn linear 10s;
+}
+#word-three {
+  font-size: 30px;
+  animation: fadeIn linear 6s;
+}
+#word-four {
+  font-size: 80px;
+  animation: fadeIn linear 5s;
+}
+#word-five {
+  font-size: 100px;
+  text-align: center;
+  animation: fadeIn linear 10s;
+}
+
+.my-work {
+  text-align: center;
+  background-color: var(--color-three);
+  color: white;
+}
+
+/* .projects {
+  margin: 0;
+  margin: 0 200px;
+}
+
+.project img {
+  position: relative;
+  width: 100%;
+  border-radius: 15px;
+  margin: 15px 0;
+} */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .words {
+    display: none;
+  }
+}
