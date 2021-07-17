@@ -6,34 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
+    <title>Lashaun Clark | Portfolio</title>
   </head>
   <body>
     <header>
-      <nav class="navbar bg-light">
+      <nav class="navbar fixed-top bg-light">
         <h1>Lashaun</h1>
         <ul class="nav-bar nav">
           <li class="nav-item">
-            <a class="nav-link" href="">What Can You Do?</a>
+            <a class="nav-link" href="#about-me">What Can You Do?</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Show Me</a>
+            <a class="nav-link" href="#projects">Show Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Let's Talk</a>
+            <a class="nav-link" href="#contact">Let's Talk</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="row about-me">
+      <!-- About -->
+      <div class="row about-me" id="about-me">
         <div class="col-xl-5 col-lg-5 col-md-10 about-me-content">
           <h1>Who Are You?</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus consequuntur itaque veniam omnis labore sunt, repellendus expedita animi
-            voluptate maiores culpa quam, iste possimus. Dolorum.
+            A software engineer in training, aspiring to create what's needed, learn continously, and automate to make your life easier.
           </p>
-          <a href="" class="btn learn-more">Learn More</a>
+          <button class="learn-more btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn More</button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Want to know more about me?</h5>
+                  <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  You can reach out any time :)
+                </div>
+                <div class="modal-footer">
+                  <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="row col-xl-5 col-lg-7 words">
           <h2 class="col-11" id="word-one">Limitless</h2>
@@ -43,42 +60,47 @@
           <h2 class="col-12" id="word-five">Focused</h2>
         </div>
       </div>
+      <!-- Projects -->
       <section class="my-work">
-        <h2>Projects</h2>
-        <!-- <div class="row projects">
-          <div class="project col-4">
-            <a href="https://lclark31.github.io/run-buddy/" target="_blank">
-              <img src="./assets/images/run-buddy-img.PNG" alt="My First Project" />
-            </a>
-          </div>
-          <div class="project col-4">
-            <a href="https://lclark31.github.io/run-buddy/" target="_blank">
-              <img src="./assets/images/pw-gen.PNG" alt="My First Project" />
-            </a>
-          </div>
-          <div class="project col-4">
-            <a href="https://lclark31.github.io/run-buddy/" target="_blank">
-              <img src="./assets/images/quiz.PNG" alt="My First Project" />
-            </a>
-          </div>
-          <div class="project col-4">
-            <a href="https://lclark31.github.io/run-buddy/" target="_blank">
-              <img src="./assets/images/calendar.PNG" alt="My First Project" />
-            </a>
-          </div>
-          <div class="project col-4">
-            <a href="https://lclark31.github.io/run-buddy/" target="_blank">
-              <img src="./assets/images/weather.PNG" alt="My First Project" />
-            </a>
-          </div>
-        </div> -->
+        <h2 id="projects">Projects</h2>
+        <button class="project-btn">View My Work</button>
+        <div class="projects hidden">
+          <a href="" class="project">
+            <div style="background-image: url(./assets/images/Utopia.PNG)"><p>Utopia</p></div>
+          </a>
+          <a href="https://lclark31.github.io/weather-dash/" target="_blank" class="project">
+            <div style="background-image: url(./assets/images/weather.PNG)"><p>Weather App</p></div>
+          </a>
+          <a href="https://lclark31.github.io/run-buddy/" target="_blank" class="project">
+            <div style="background-image: url(./assets/images/run-buddy-img.PNG)"><p>Run Buddy</p></div>
+          </a>
+          <a href="https://lclark31.github.io/password-generator/" target="_blank" class="project">
+            <div style="background-image: url(./assets/images/pw-gen.PNG)"><p>Random Password Generator</p></div>
+          </a>
+          <a href="https://lclark31.github.io/JavaScript-Mini-Quiz/" target="_blank" class="project">
+            <div style="background-image: url(./assets/images/quiz.PNG)"><p>Javascript Quiz</p></div>
+          </a>
+          <a href="https://lclark31.github.io/Calendar-app/" target="_blank" class="project">
+            <div style="background-image: url(./assets/images/calendar.PNG)"><p>Work Day Calendar</p></div>
+          </a>
+        </div>
       </section>
+      <footer>
+        <h2 id="contact">Contact Me</h2>
+        <div class="row contact-icons">
+          <a class="col-4 icons" href="https://github.com/Lclark31" target="_blank"><img src="./assets/images/github.svg" alt="My GitHub" /></a>
+          <a class="col-4 icons" href="mailto:clarklas831@gmail.com"><img src="./assets/images/mailbox.svg" alt="My Email" /></a>
+          <a class="col-4 icons" href="tel:4142362692" "><img src="./assets/images/phone-vibrate.svg" alt="My Number" /></a>
+        </div>
+        <a class="icons" href="#about-me"><img src="./assets/images/arrow-up-circle.svg" alt="" /></a>
+      </footer>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

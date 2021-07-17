@@ -22,7 +22,7 @@ body {
   color: white;
 }
 
-a {
+.navbar a {
   color: white;
 }
 
@@ -84,23 +84,84 @@ h2 {
   animation: fadeIn linear 10s;
 }
 
+/* projects */
 .my-work {
   text-align: center;
   background-color: var(--color-three);
-  color: white;
+  color: var(--color-five);
+  min-height: 50vh;
 }
 
-/* .projects {
-  margin: 0;
-  margin: 0 200px;
+.project-btn {
+  background-color: var(--color-four);
+  color: var(--color-two);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 30px 0;
+  padding: 8px 8px;
 }
 
-.project img {
-  position: relative;
-  width: 100%;
-  border-radius: 15px;
-  margin: 15px 0;
-} */
+.project-btn:hover {
+  border: 1px solid var(--color-five);
+  font-size: 22px;
+  transition: 200ms;
+}
+
+.project-btn:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.project {
+  text-align: left;
+  height: 10em;
+  line-height: 10em;
+  margin: 10px 0;
+}
+
+.project p {
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--color-five);
+  background: rgba(63, 62, 62, 0.6);
+}
+a:hover {
+  text-decoration: none;
+}
+
+.project p:hover {
+  background-image: none !important;
+  background-color: var(--color-five);
+  color: var(--color-one);
+}
+
+/* contact me */
+footer {
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 30px;
+}
+
+.contact-icons {
+  justify-content: space-around;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.icons {
+  max-width: 100px;
+  margin-bottom: 50px;
+}
+
+.icons img {
+  height: 60px;
+}
 
 @keyframes fadeIn {
   0% {
