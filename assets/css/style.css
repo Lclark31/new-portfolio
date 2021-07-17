@@ -142,6 +142,9 @@ a:hover {
 /* contact me */
 footer {
   text-align: center;
+  background-color: var(--color-four);
+  border-top: 3px solid var(--color-one);
+  color: var(--color-one);
 }
 
 footer h2 {
