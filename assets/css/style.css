@@ -58,6 +58,20 @@ h2 {
   transition: 500ms;
 }
 
+/* modal */
+.experience-list {
+  margin-left: 10px;
+  padding-right: 0;
+}
+
+.my-image {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 15px;
+  padding: 0;
+}
+
+/* hero */
 span {
   color: var(--color-four);
 }
